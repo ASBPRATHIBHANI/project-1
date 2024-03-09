@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family:"Poppins";
+}
+
+body {
+     margin: 0 auto;
+}
+/*navigation*/
+nav{
+    background-color:hsl(228, 60%, 27%);
+    display: flex;
+    flex-direction:row;
+    padding: 1rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 3rem;
+    font-size: 20px;
+    color: #faf7f7;
+    align-items: center;
+
+}
+button{
+    border: none;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: #3bbde8;
+
+}
+a{
+    text-decoration: none;
+}
