@@ -1,42 +1,342 @@
-@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+/* ----------------insert google fonts here----------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,90;0;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-    font-family:"Poppins";
-}
-
-body {
-     margin: 0 auto;
-}
-/*navigation*/
-nav{
-    background-color:hsl(228, 60%, 27%);
-    display: flex;
-    flex-direction:row;
-    padding: 1rem 3rem;
-    justify-content: space-between;
-    align-items: center;
-}
-ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 3rem;
-    font-size: 20px;
-    color: #faf7f7;
-    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    color: #fff;
 
 }
-button{
-    border: none;
-    font-size: 20px;
-    padding: 5px 20px;
-    border-radius: 15px;
-    background-color: #3bbde8;
-
+:root{
+    --prime: #00ff34;
 }
-a{
+
+body{
+    background-color: #131b2b;
+    }
+
+    /* ------------style navbar---------- */
+.navbar{
+        width: 100%;
+        display: flex;
+        position: fixed;
+        padding: 30px 120px;
+        background-color: transp;
+        justify-content: space-between;
+        z-index: 1111;
+        transition: 0.5s ease;
+    }
+.logo{
+    font-size: 2.8em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     text-decoration: none;
 }
+.logo B{
+    color: var(--prime);
+}
+ol{
+   display: flex;
+   margin: auto 0; 
+}
+ol li{
+    list-style: none;
+    margin-right: 20px;
+}
+ol li a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    gap: 5rem;
+
+}
+ol li:hover a{
+    color: var(--prime);
+}
+/* ----------------common size for all section ------- */
+.view{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+}
+
+/* ----------------style home section------- */
+.home{
+   display: flex;
+    min-height: 120vh;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0,100% 0,100% 100%,80% 95%,0 100%);
+}
+.banner{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url(./Resource/istockphoto-1419288565-170667a.webp);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(40%);
+}
+.highlights{
+  width: 70%;
+  position: relative;  
+  display: inline-block;
+  z-index: 11;
+
+}
+.highlights h3{
+  display: inline;
+  font-size: 2vw;
+  padding: 5px 20px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  border-left: 6px solid var(--prime);
+
+
+}
+.highlights h1{
+    font-size: 9vw;
+    text-align: center;
+    font-weight: normal;
+}
+.highlights b{
+    color: var(--prime);
+    font-weight: 800;
+    font-family: sans-serif;
+}
+.highlights .tagline{
+    color: #d7d7d7;
+    font-size: 1.2vw;
+    text-align: center;
+    font-weight: normal;
+}
+.highlights .sing{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 800;
+    padding: 5px 20px;
+    font-size: 1.5vw;
+    margin-top: 1.2em;
+    color: #00ff34;
+    border: 2px solid var(--prime);
+    border-radius: 50px;
+    background: transparent;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+.highlights .sing:hover{
+    color: #fff;
+    cursor:pointer;
+    letter-spacing: 1.5px;
+    background: var(--prime);
+}
+
+                 /* ----------About section ------------ */
+/* ----------commen style for all section--------- */
+.main{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.main h2{
+    font-size: 2.5vw;
+    position: relative;
+    text-align: center;
+    padding-top: 0%;
+    display: inline-block;
+
+}
+span{
+    color: var(--prime);
+}
+.main h2:before{
+    position: absolute;
+    content: '';
+    background: var(--prime);
+    height: 3px;
+    width: 30%;
+    right: -15px;
+    bottom: 0;
+    border-radius: 50px;
+}
+.main h6{
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight:lighter;
+
+}
+.content{
+    position: relative;
+    display: flex;
+    width: 0 30px;
+    justify-content: center;
+}
+
+.about .content .cols{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px 40px;
+}
+.about .content .cols p b{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.about .content .cols a{
+    position: relative;
+    top: 20px;
+    color: #fff;
+    background: var(--prime);
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.about .content .cols a:hover{
+    color:#000;
+    background: #fff;
+}
+.about .content .cols .box{
+    position: relative;
+    height: 550px;
+    box-shadow: 0 50px 20px rgba(0,0,0,0.5)
+}
+.about .content .cols .box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* -----------------workout section----------- */
+.workout .content{
+    flex-wrap: wrap;
+
+}
+.workout .content .frame{
+    position: relative;
+    width: 400px;
+    padding: 20px;
+    margin: 10px;
+    background:#222;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+
+}
+.workout .content .frame .box{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+
+}
+.workout .content .frame .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: 0.2s ease-in;
+}
+.workout .content .frame .box:hover img{
+    filter: brightness(100%);
+    transform: scale(1.08);
+}
+.workout .content .frame .title{
+    color: var(--prime);
+    padding: 5px 0;
+}
+
+/* ------------------style trainer---------- */
+.trainer .content .team-title .section-title {
+	text-align: left;
+	float: left;
+}
+
+.trainer .content .primary-btn.appoinment-btn {
+	background: transparent;
+	border: 2px solid #f36100;
+	float: right;
+	margin-top: 10px;
+}
+.trainer .content{
+    flex-wrap: wrap;
+}
+.trainer .content .frame{
+    position: relative;
+    width: 500px;
+    padding: 30px 30px 40px 30px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    margin: 10px;background: #222;
+}
+.trainer .content .frame .box{
+    position: relative;
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+}
+.trainer .content .frame .box img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(1);
+    object-fit: cover;
+    transition: 0.2s ease-in;
+}
+.trainer .content .frame .box:hover img{
+    filter: grayscale(0);
+    transform: scale(1.08);
+}
+.trainer .content .frame .headline{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 8px 0;
+}
+.trainer .content .frame .headline i{
+    height: 22px;
+    width: 22px;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 5px;
+    cursor: pointer;
+    line-height: 22px;
+
+}
+.trainer .content .frame .headline i:hover{
+    border: 1.5px solid var(--prime);
+    background: var(--prime);
+}
+.trainer .content .frame .headline .title{
+    color: var(--prime);
+    font-size: 1.2em;
+}
+
+.trainer .content .frame p{
+    font-size: 0.8em;
+    position: relative;
+    bottom: 5px;
+}
+.trainer .content .frame a{
+    top: 20px;
+    color: var(--prime);
+    background: transparent;
+    padding: 5px 20px;
+    border: 1.5px solid var(--prime);
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
